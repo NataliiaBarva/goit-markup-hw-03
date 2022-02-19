@@ -10,16 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <!--Основные стили-->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    
     <header class="header">
         <!--Навигация-->
-        <nav class="nav">
+        <nav class="nav container">
+        <section class="nav-container">
         <a href="/" class="logo">Web<span class="logo-light">Studio</span></a>        
             
-        <ul class="site-nav">
+            <ul class="site-nav">
                 <li class="site-nav-item"><a class="current site-nav-link link" href="./index.html">Студия</a></li>
                 <li class="site-nav-item"><a class="site-nav-link link" href="./portfolio.html">Портфолио</a></li>
                 <li class="site-nav-item"><a class="site-nav-link link" href="">Контакты</a></li>
@@ -29,18 +32,25 @@
                 <li class="auth-nav-item"> <a class="auth-nav-link" href="mailto:info@example.com">info@devstudio.com</a></li>
                 <li class="auth-nav-item"> <a class="auth-nav-link" href="tel:+380991111111">+38 096 111 11 11</a></li>
             </ul> 
-        
+        </section>
         </nav>
+        
     </header>
+
+
+
 <main>
         <!--Герой-->
         <section class="hero">
+            <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <!--Кнопка Заказать услугу-->
-            <button class="button" type="button">Заказать услугу</button>
+            <button class="hero-button" type="button">Заказать услугу</button>
+            </div>
         </section>
-    <section class="features">
+
         <!--Секция преимущества-->
+        <section class="features container">
         <h2 class="features-title" hidden>Преимущества</h2>
         <ul class="features-list">
             <li class="features-item"> 
@@ -61,17 +71,17 @@
             </li>
         </ul>
         </section>
-        <section class="">
+        <section class="container">
             <!--Секция Чем мы занимаемся, три фото-->
         <h2 class="job">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="job-img">
             <li class="job-item"> <img src="./images/kod.jpg" alt="написание кода" width="370" height="294"> </li>
             <li class="job-item"> <img src="./images/adaptive.jpg" alt="адаптивная верстка" width="370" height="294"> </li>
             <li class="job-item"> <img src="./images/pixel.jpg" alt="оптимизация изображений" width="370" height="294"> </li>
         </ul>
     </section>
     <!--Секция Наша команда-->
-    <section class="people">
+    <section class="people container">
         <h2 class="people-title">Наша команда</h2>
         <ul class="people-list">
             <li class="people-item">
@@ -99,6 +109,7 @@
 </main>
 <!--СекцияФутер-->
     <footer class="footer">
+        <section class="container">
         <a href="/" class="logo">Web<span class="logo-dark">Studio</span></a>
         <address>
             <ul>
@@ -107,6 +118,7 @@
                 <li class=""> <a class="footer-link footer-contact" href="tel:+380991111111">+38 099 111 11 11</a> </li>
             </ul>
         </address>
+        </section>
 
     </footer>
     

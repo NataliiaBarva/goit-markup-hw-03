@@ -38,12 +38,19 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-light-cl);
-  background-color: var(--primary-dark-cl)
+  background-color: var(--primary-dark-cl);
+
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 /* отменить точки в списках */
 ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
+  
 }
 
 /* логотип */
@@ -55,18 +62,50 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-txt-cl);
+
+  margin-bottom: 25px;
+  margin-right: auto;
+  margin-top: 24px;
+  margin-left: auto;
 }
+
 span.logo-light {
   color: var(--logo-light-cl);
 }
 
+header {
+  align-items: center;
+}
+.container {
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
 .link {
   text-decoration: none;
 }
 
 .nav {
   background-color: var(--nav-bg);
+  
 }
+.nav-container {
+  display: flex;
+  
+ 
+  
+}
+.site-nav {
+  display: flex;
+  
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+} 
+
+  
 
 .site-nav-link {
   text-decoration: none;
@@ -76,6 +115,17 @@ span.logo-light {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-light-cl);
+  
+}
+
+.site-nav-item {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  margin-right: 50px;
+}
+
+.site-nav-item:last-child {
+  margin-right: 0;
 }
 
 .auth-nav-link {
@@ -88,11 +138,22 @@ span.logo-light {
   color: var(--secondary-light-cl);
 }
 
+.auth-nav-item {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  margin-right: 50px;
+  
+}
+ /*  
+.auth-nav-item:last-child {
+  margin-right: 0;
+}*/
 .site-nav-link:hover,
 .site-nav-link:focus {
   color: var(--accent-txt-cl);
 }
- .current {
+
+.current {
    color: var(--accent-txt-cl);
  }
 .auth-nav-link:hover,
@@ -102,12 +163,17 @@ span.logo-light {
 
 main {
   background-color: var(--secondary-light-bg);
+  
 }
 .hero {
   background-color: var(--secondary-dark-bg);
+  margin: 94px;
+    
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: var(--main-font);
   color: var(--primary-dark-cl);
   font-weight: 900;
@@ -115,12 +181,21 @@ main {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  text-align: center;
+  
 }
 
 .button {
   cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  
+  margin-right: auto;
+  margin-left: auto;
+    
 }
-/* Кнопка героя */
+
 .button {
   font-family: var(--main-font);
   font-weight: 700;
@@ -129,9 +204,27 @@ main {
   letter-spacing: 0.06em;
   color: var(--primary-dark-cl);
   background-color: var(--accent-txt-cl);
-}
+ 
 
+}
+/* Кнопка героя */
+.hero-button {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.06em;
+  color: var(--primary-dark-cl);
+  background-color: var(--accent-txt-cl);
+
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  text-aligin: center;
+  
+}
 /* контент */
+
 
 .features-caption {
   font-family: var(--main-font);
@@ -141,6 +234,12 @@ main {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-light-cl);
+
+  text-align: left;
+  display: flex;
+  bottom: 10px;
+  margin-right: 30px;
+  margin-left: auto;
 }
 
 .features-text {
@@ -149,8 +248,21 @@ main {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  text-align: left;
+  margin-right: 30px;
+}
+.features-text:last-child {
+  margin-right: 0;
 }
 
+.features-list {
+   display: flex;
+}
+
+.features-item {
+  flex-basis: calc((100%-60px)/4);
+}
 .job {
   font-family: var(--main-font);
   font-weight: 700;
@@ -158,7 +270,28 @@ main {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-light-cl);
+  padding-bottom:: 50px;
+  text-align: center;
+
 }
+
+.job-item {
+  margin-right: 30px;
+}
+
+.job-item:last-child {
+  margin-right: 0;
+}
+
+.job-img {
+  display: flex;
+  flex-basis: calc((100%/3)-60px);
+}
+
+
+/* .job-img:not(:last-child) { 
+  margin-right: 30px;
+}*/
 .people {
   background-color: var(--primary-light-bg)
 }
@@ -167,6 +300,8 @@ main {
   background-color: var(--primary-dark-cl);
   width: 270px;
   height: 368px;
+
+  margin-right: 30px;
 }
 .people-title {
   font-family: var(--main-font);
@@ -175,7 +310,15 @@ main {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-light-cl);
+  
+  text-align: center;
+  padding-bottom:: 50px;
 
+}
+
+.people-list {
+  display: flex;
+  text-align: center;
 }
 .fio {
   font-family: var(--main-font);
@@ -203,26 +346,26 @@ main {
 .btn:hover {
   background-color: var(--accent-txt-cl);
   color: var(--primary-dark-cl);
+  border-radius: 4px;
 }
 
 .btn {
   cursor: pointer;
+  
 }
 .filtr-item {
+  display: inline-block;
   font-family:var(--main-font)
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: var(--primary-light-cl);
-}
-.button-filtr {
-  font-family: var(--main-font)
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
-  color: var(--primary-light-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding: 6px 22px;
+  text-align: center;
+
 }
 
 .portfolio-name {
@@ -237,6 +380,8 @@ main {
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
+
+  
 }
 
 .portfolio-tipe {
@@ -285,3 +430,11 @@ span.logo-dark {
 .footer {
   background: var(--secondary-dark-bg);
   }
+
+  /* 3 hw позиціонування */
+
+  .container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;    
+  } 
