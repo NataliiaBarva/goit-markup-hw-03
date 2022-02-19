@@ -42,7 +42,6 @@ body {
 
   margin-right: auto;
   margin-left: auto;
-
 }
 
 /* отменить точки в списках */
@@ -50,7 +49,6 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  
 }
 
 /* логотип */
@@ -66,7 +64,7 @@ ul {
   margin-bottom: 25px;
   margin-right: auto;
   margin-top: 24px;
-  margin-left: auto;
+  margin-left: 0;
 }
 
 span.logo-light {
@@ -75,37 +73,46 @@ span.logo-light {
 
 header {
   align-items: center;
+  border-bottom: 1px;
 }
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   align-items: center;
   margin-right: auto;
   margin-left: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
+/*  
+.flex-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}*/
 .link {
   text-decoration: none;
 }
 
 .nav {
   background-color: var(--nav-bg);
-  
 }
 .nav-container {
   display: flex;
-  
- 
-  
 }
 .site-nav {
   display: flex;
-  
 }
 
 .auth-nav {
   display: flex;
   margin-left: auto;
-} 
-
-  
+}
 
 .site-nav-link {
   text-decoration: none;
@@ -115,7 +122,6 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-light-cl);
-  
 }
 
 .site-nav-item {
@@ -142,9 +148,8 @@ header {
   margin-top: 24px;
   margin-bottom: 32px;
   margin-right: 50px;
-  
 }
- /*  
+/*  
 .auth-nav-item:last-child {
   margin-right: 0;
 }*/
@@ -154,8 +159,8 @@ header {
 }
 
 .current {
-   color: var(--accent-txt-cl);
- }
+  color: var(--accent-txt-cl);
+}
 .auth-nav-link:hover,
 .auth-nav-link:focus {
   color: var(--accent-txt-cl);
@@ -163,12 +168,10 @@ header {
 
 main {
   background-color: var(--secondary-light-bg);
-  
 }
 .hero {
   background-color: var(--secondary-dark-bg);
-  margin: 94px;
-    
+  text-align: center;
 }
 
 .hero-title {
@@ -181,19 +184,16 @@ main {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  text-align: center;
-  
+  margin-bottom: 30px;
 }
 
 .button {
   cursor: pointer;
   border-radius: 4px;
   padding: 10px 32px;
-  
+
   margin-right: auto;
   margin-left: auto;
-    
 }
 
 .button {
@@ -204,8 +204,6 @@ main {
   letter-spacing: 0.06em;
   color: var(--primary-dark-cl);
   background-color: var(--accent-txt-cl);
- 
-
 }
 /* Кнопка героя */
 .hero-button {
@@ -220,11 +218,9 @@ main {
   cursor: pointer;
   border-radius: 4px;
   padding: 10px 32px;
-  text-aligin: center;
-  
+  text-align: center;
 }
 /* контент */
-
 
 .features-caption {
   font-family: var(--main-font);
@@ -252,16 +248,13 @@ main {
   text-align: left;
   margin-right: 30px;
 }
-.features-text:last-child {
-  margin-right: 0;
-}
 
 .features-list {
-   display: flex;
+  display: flex;
 }
 
 .features-item {
-  flex-basis: calc((100%-60px)/4);
+  flex-basis: calc((100%-60px) / 4);
 }
 .job {
   font-family: var(--main-font);
@@ -270,9 +263,8 @@ main {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-light-cl);
-  padding-bottom:: 50px;
+  padding-bottom: 50px;
   text-align: center;
-
 }
 
 .job-item {
@@ -285,15 +277,14 @@ main {
 
 .job-img {
   display: flex;
-  flex-basis: calc((100%/3)-60px);
+  flex-basis: calc((100% / 3)-60px);
 }
-
 
 /* .job-img:not(:last-child) { 
   margin-right: 30px;
 }*/
 .people {
-  background-color: var(--primary-light-bg)
+  background-color: var(--primary-light-bg);
 }
 
 .people-item {
@@ -310,10 +301,9 @@ main {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-light-cl);
-  
-  text-align: center;
-  padding-bottom:: 50px;
 
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 .people-list {
@@ -339,7 +329,7 @@ main {
 /* сторінка портфоліо */
 
 .filtr {
-  background: var(--primary-dark-cl)
+  background: var(--primary-dark-cl);
 }
 
 .btn:focus,
@@ -351,21 +341,41 @@ main {
 
 .btn {
   cursor: pointer;
-  
 }
 .filtr-item {
   display: inline-block;
-  font-family:var(--main-font)
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: var(--primary-light-cl);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   padding: 6px 22px;
   text-align: center;
+}
 
+.portfolio {
+  border-bottom: 1px;
+  width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-item:nth-last-child(-n + 6) {
+  margin-top: 30px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .portfolio-name {
@@ -377,15 +387,13 @@ main {
 }
 
 .portfolio-item {
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
   box-sizing: border-box;
-
-  
 }
 
 .portfolio-tipe {
-  font-family: var(--main-font)
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -400,7 +408,6 @@ address {
 .footer-link {
   text-decoration: none;
 }
-
 
 .footer-link:hover,
 .footer-link:focus {
@@ -424,17 +431,10 @@ span.logo-dark {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  
 }
 
 .footer {
   background: var(--secondary-dark-bg);
-  }
+}
 
-  /* 3 hw позиціонування */
-
-  .container {
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;    
-  } 
+/* 3 hw позиціонування */
