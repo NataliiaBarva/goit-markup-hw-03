@@ -85,7 +85,7 @@ section {
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  width: 1200px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -330,6 +330,9 @@ main {
 
 .filtr {
   background: var(--primary-dark-cl);
+  margin-right: 8px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .btn:focus,
@@ -359,11 +362,27 @@ main {
 
 .portfolio {
   border-bottom: 1px;
-  width: 370px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+}
+
+.portfolio-name {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--primary-light-cl);
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.portfolio-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-right: 30px;
 }
 
 .portfolio-item:nth-last-child(-n + 6) {
@@ -377,27 +396,14 @@ main {
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
 }
-
-.portfolio-name {
-  font-family: var(--main-font);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  color: var(--primary-light-cl);
-}
-
-.portfolio-item {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-}
-
 .portfolio-tipe {
   font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-light-cl);
+  margin-right: 24px;
+  margin-left: 24px;
 }
 
 /* стилизация подвала */
