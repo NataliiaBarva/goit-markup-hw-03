@@ -15,26 +15,23 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+    <!--Навигация-->
     <header class="header">
-        <!--Навигация-->
-        <nav class="nav container">
-        <section class="nav-container">
-        <a href="/" class="logo">Web<span class="logo-light">Studio</span></a>        
-            
+        <div class="container header-container"></div>
+        <nav class="nav">
+        <!-- <section class="nav-container"> -->
+        <a href="/" class="logo">Web<span class="logo-light">Studio</span></a>
             <ul class="site-nav">
                 <li class="site-nav-item"><a class="current site-nav-link link" href="./index.html">Студия</a></li>
                 <li class="site-nav-item"><a class="site-nav-link link" href="./portfolio.html">Портфолио</a></li>
                 <li class="site-nav-item"><a class="site-nav-link link" href="">Контакты</a></li>
             </ul>
-            
+        </nav>
             <ul class="auth-nav">
                 <li class="auth-nav-item"> <a class="auth-nav-link" href="mailto:info@example.com">info@devstudio.com</a></li>
                 <li class="auth-nav-item"> <a class="auth-nav-link" href="tel:+380991111111">+38 096 111 11 11</a></li>
-            </ul> 
-        </section>
-        </nav>
-        
+            </ul>
+        </div>
     </header>
 
 
@@ -50,8 +47,9 @@
         </section>
 
         <!--Секция преимущества-->
-        <section class="features container">
-        <h2 class="features-title" hidden>Преимущества</h2>
+        <section class="features section">
+        <div class="container">
+        <h2 hidden class="features-title">Преимущества</h2>
         <ul class="features-list">
             <li class="features-item"> 
                 <h3 class="features-caption">Внимание к деталям</h3>
@@ -70,55 +68,69 @@
                 <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
+        </div>
         </section>
-        <section class="container">
-            <!--Секция Чем мы занимаемся, три фото-->
+
+        <!--Секция Чем мы занимаемся, три фото-->
+        <section class="section job-section">
+        <div class="container">
         <h2 class="job">Чем мы занимаемся</h2>
         <ul class="job-img">
             <li class="job-item"> <img src="./images/kod.jpg" alt="написание кода" width="370" height="294"> </li>
             <li class="job-item"> <img src="./images/adaptive.jpg" alt="адаптивная верстка" width="370" height="294"> </li>
             <li class="job-item"> <img src="./images/pixel.jpg" alt="оптимизация изображений" width="370" height="294"> </li>
         </ul>
+        </div>
     </section>
     <!--Секция Наша команда-->
-    <section class="people container">
+    <section class="people section">
+        <div class="container">
         <h2 class="people-title">Наша команда</h2>
         <ul class="people-list">
             <li class="people-item">
                 <img src="./images/photo1.jpg" alt="здесь мы хотели показать вам фото Игоря Демьяненко" width="270" height="260">
+                <div class="fio-post">
                 <h3 class="fio">Игорь Демьяненко</h3>
                 <p class="post">Product Designer</p>
+                </div>
             </li>
             <li class="people-item">
                 <img src="./images/photo2.jpg" alt="здесь мы хотели показать вам фото Ольги Репиной" width="270" height="260">
+                <div class="fio-post"></div>
                 <h3 class="fio">Ольга Репина</h3>
                 <p class="post">Frontend Developer</p>
+                </div>
             </li>
             <li class="people-item">
                 <img src="./images/photo3.jpg" alt="здесь мы хотели показать вам фото Николая Тарасова" width="270" height="260">
+                <div class="fio-post"></div>
                 <h3 class="fio">Николай Тарасов</h3>
                 <p class="post">Marketing</p>
+                </div>
             </li>
             <li class="people-item">
                 <img src="./images/photo4.jpg" alt="здесь мы хотели показать вам фото Михаила Ермакова" width="270" height="260">
+                <div class="fio-post"></div>
                 <h3 class="fio">Михаил Ермаков</h3>
                 <p class="post">UI Designer</p>
+                </div>
             </li>
         </ul>
+        </div>
     </section>
 </main>
 <!--СекцияФутер-->
     <footer class="footer">
-        <section class="container">
-        <a href="/" class="logo">Web<span class="logo-dark">Studio</span></a>
+        <div class="container">
+        <a href="/" class="logo footer-logo">Web<span class="logo-dark">Studio</span></a>
         <address>
             <ul>
-                <li class=""> <a class="footer-link footer-map" href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"> г.Киев, пр-т Леси Украинки, 26</a> </li>
-                <li class=""> <a class="footer-link footer-contact" href="mailto:info@example.com">info@example.com</a> </li>
-                <li class=""> <a class="footer-link footer-contact" href="tel:+380991111111">+38 099 111 11 11</a> </li>
+                <li class="footer-cont"> <a class="footer-link footer-map" href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"> г.Киев, пр-т Леси Украинки, 26</a> </li>
+                <li class="footer-cont"> <a class="footer-link footer-contact" href="mailto:info@example.com">info@example.com</a> </li>
+                <li class="footer-cont"> <a class="footer-link footer-contact" href="tel:+380991111111">+38 099 111 11 11</a> </li>
             </ul>
         </address>
-        </section>
+    </div>
 
     </footer>
     
