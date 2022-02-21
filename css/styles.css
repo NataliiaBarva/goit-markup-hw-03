@@ -37,8 +37,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--secondary-light-cl);
-  background-color: var(--primary-dark-cl);
+  /*color: var(--secondary-light-cl);
+   background-color: var(--primary-dark-cl); */
 
   margin-right: auto;
   margin-left: auto;
@@ -98,6 +98,7 @@ header {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
+  
 }
 
 /*  
@@ -477,9 +478,10 @@ span.logo-dark {
 }
 
 .footer {
-  background: var(--secondary-dark-bg);
+  background-color: var(--secondary-dark-bg);
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 
 /* 3 hw позиціонування */
