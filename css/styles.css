@@ -37,11 +37,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  /*color: var(--secondary-light-cl);
-   background-color: var(--primary-dark-cl); */
-
-  margin-right: auto;
-  margin-left: auto;
+  color: var(--secondary-light-cl);
+  background-color: var(--primary-dark-cl);
 }
 
 /* отменить точки в списках */
@@ -68,10 +65,7 @@ p {
   letter-spacing: 0.03em;
   color: var(--accent-txt-cl);
 
-  margin-bottom: 25px;
-  margin-right: auto;
-  margin-top: 24px;
-  margin-left: 0;
+  margin-right: 93px;
 }
 
 span.logo-light {
@@ -82,23 +76,17 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
-  display: flex;
-}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-
 .container {
-  align-items: center;
   margin-right: auto;
   margin-left: auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  
 }
 
 /*  
@@ -112,8 +100,10 @@ header {
 
 .nav {
   background-color: var(--nav-bg);
+  display: flex;
+  align-items: center;
 }
-.nav-container {
+.header-container {
   display: flex;
 }
 .site-nav {
@@ -154,6 +144,9 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-light-cl);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .auth-nav-item {
@@ -183,6 +176,8 @@ main {
 .hero {
   background-color: var(--secondary-dark-bg);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -225,11 +220,13 @@ main {
   letter-spacing: 0.06em;
   color: var(--primary-dark-cl);
   background-color: var(--accent-txt-cl);
-
+  display: block;
   cursor: pointer;
   border-radius: 4px;
   padding: 10px 32px;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 /* контент */
 
@@ -262,10 +259,13 @@ main {
 }
 
 .features-item {
+  margin-right: 30px;
   flex-basis: calc((100%-60px) / 4);
 }
-
-.job-job-section {
+.features-item:last-child {
+  margin-right: 0;
+}
+.job-section {
   padding-top: 0;
 }
 
@@ -352,7 +352,7 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  
+}
 
 .btn:focus,
 .btn:hover {
@@ -371,7 +371,6 @@ img {
   display: inline-block;
 }
 .filtr-item {
-  
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -385,10 +384,8 @@ img {
 }
 
 .portfolio {
-  
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .portfolio-name {
@@ -398,10 +395,10 @@ img {
   line-height: 2;
   color: var(--primary-light-cl);
   margin-bottom: 4px;
-  
 }
 
 .portfolio-item {
+  width: 370px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
@@ -416,14 +413,12 @@ img {
   margin-right: 0;
 }
 
-
 .portfolio-tipe {
   font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-light-cl);
-  
 }
 
 .portfolio-name-tipe {
@@ -482,6 +477,5 @@ span.logo-dark {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 
 /* 3 hw позиціонування */
