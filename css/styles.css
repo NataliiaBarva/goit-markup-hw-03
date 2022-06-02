@@ -436,7 +436,8 @@ address {
 }
 
 .footer-logo {
-  margin: 20px;
+  margin-bottom: 20px;
+  
 }
 
 .footer-link {
