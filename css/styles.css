@@ -413,7 +413,7 @@ img {
 
 .portfolio-item {
   width: 370px;
-  background: #ffffff;
+  background: var(--primary-dark-cl);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   margin-right: 30px;
@@ -441,7 +441,7 @@ img {
   border-bottom: 20px;
   border-left: 24px;
 }
-/* стилизация подвала */
+/* стилізація підвалу */
 
 address {
   font-style: normal;
